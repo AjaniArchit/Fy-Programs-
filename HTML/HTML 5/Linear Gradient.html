@@ -1,0 +1,21 @@
+<DOCTYPE html>
+  <html>
+  <body>
+  <canvas id="AR" Width="300" height="200" style="border:30px solid cyan;">Browser not supported....</canvas>
+  
+  
+  <script type="text/javascript">
+  var r=document.getElementById("AR");
+  var ctx=r.getContext("2d");
+  //create gradient
+  var grd=ctx.createLinearGradient(0,0,250,0);
+  
+  grd.addColorStop(0,"yellow");
+  grd.addColorStop(1,"red");
+  //fillwithgradientg
+  
+  ctx.fillStyle=grd;
+  ctx.fillRect(10,20,180,80);
+  </script>
+  </body>
+  </html>
