@@ -1,0 +1,38 @@
+#include<iostream.h>
+#include<conio.h>
+class emp
+{
+	public:int a,b;
+	friend emp operator *(emp,emp);
+	emp {}
+	emp(int x,int y)
+	{
+		a=x;
+		b=y;
+
+	}
+	public:void show()
+	{
+		cout<<"a=="<<a<<endl;
+		cout<<"b=="<<b<<endl;
+
+	}
+};
+emp  operator + (emp e , emp e1)
+{
+	emp obj;
+	obj.a=e.a+e1.a;
+	obj.b=e.b+e1.b;
+	return obj;
+
+}
+int main()
+{
+	clrscr();
+	emp s1(10,20);
+	emp s2(30,40);
+	emp s3=s1+s2;
+	s3.show();
+	getch();
+	return 0;
+}

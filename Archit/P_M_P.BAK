@@ -1,0 +1,24 @@
+#include<iostream.h>
+#include<conio.h>
+class demo
+{
+	public: int x;
+	void fun(int a)
+	{
+		cout<<"a:"<<a;
+
+	}
+
+};
+void main()
+{
+	int demo::*p=&demo::x;
+	void (demo::*ptr_var_fun)
+	(int)=&demo::fun;
+	demo obj;
+	obj.*p=10;
+	cout<<"\n value of x data member"<<obj.*p;
+	(obk.*ptr_var_fun)(23);
+	getch();
+
+}

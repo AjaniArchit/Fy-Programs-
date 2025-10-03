@@ -1,0 +1,42 @@
+#include<iostream.h>
+#include<conio.h>
+class squre
+{
+	public: int c;
+	protected : int y;
+	private : int a;
+	public : squre()
+	{
+		a=30;
+	}
+	public:void show()
+	{
+		cout<<"a=="<<a;
+
+	}
+};
+class star: public squre
+{
+	public:void assign()
+	{
+	     y=90;
+	     c=50;
+	}
+	public:void display1()
+	{
+		cout<<" y=="<<y<<"c=="<<c;
+		show();
+	}
+};
+int main()
+{
+	clrscr();
+	star s;
+	s.assign();
+	s.display();
+	rectangle r;
+	r.assign();
+	r.display();
+	getch();
+
+}
